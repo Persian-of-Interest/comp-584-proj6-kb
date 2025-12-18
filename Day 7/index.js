@@ -16,7 +16,6 @@ const containsCountMap = new Map();
 
 // Parse each rule
 for (const rule of rules) {
-    // Example rule: "light red bags contain 1 bright white bag, 2 muted yellow bags."
     const [outer, inner] = rule.split(" bags contain ");
 
     if (inner === "no other bags.") {
